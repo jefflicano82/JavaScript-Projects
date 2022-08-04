@@ -5,8 +5,8 @@ document.getElementById("Main_Text").innerHTML=A,B;
 }
 
 function Func2(p1, p2) {
-    return p1*p2;
-    document.getElementById("Func2").innerHTML=sentence;   // The function returns the product of p1 and p2
+   var result= (p1*p2);
+    document.getElementById("Func2").innerHTML=result;   // The function returns the product of p1 and p2
   }
 
 function myFunction () {
