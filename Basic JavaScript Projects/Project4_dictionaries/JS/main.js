@@ -6,5 +6,5 @@ function Dictionary()  {
         Age:"750 million years",
     }; //Deleting Ocean from the dictionary//
     delete Ocean.Color;
-    document.getElementById("Dictionary").innerHTML=Ocean.Depth;
+    document.getElementById("Dictionary").innerHTML=Ocean.Color;
 }
