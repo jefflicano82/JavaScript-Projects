@@ -89,7 +89,7 @@ function checkWinConditions() {
   } else if (arrayIncludes("0O", "10", "20")) {
     drawWinLine(50, 100, 558, 100);
   } else if (arrayIncludes("30", "40", "50")) {
-    drawWinLine(50, 304, 558, 508);
+    drawWinLine(50, 304, 558, 304);
   } else if (arrayIncludes("60", "70", "80")) {
     drawWinLine(50, 508, 558, 508);
   } else if (arrayIncludes("80", "30", "60")) {
@@ -147,7 +147,7 @@ function audio(audioURL) {
 //This function utilizes HTML canvas to draw win lines.
 function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
   //This line acceses our HTML canvas element.
-  const canvas = document.getElementById("wing-lines");
+  const canvas = document.getElementById("win-lines");
   //This line gives us access to methoda nd properties to use on a canvas.
   const c = canvas.getContext("2d");
   //This lin eindicates where the start of a lines x axis is.
@@ -197,7 +197,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     }
     //This condition is similiar to the one above.
     //This is necessary for the 6,4,2 win conditions
-    if (x1 <= x2 && y2 >= y2) {
+    if (x1 <= x2 && y1 >= y2) {
       if (x < x2) {
         x += 10;
       }
