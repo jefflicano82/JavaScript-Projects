@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/todo.css" />
+    <title>Jeff Licano Project</title>
+  </head>
+  <body>
+    <input id="task" /><button id="add">Add Item</button>
+    <hr />
+    <div id="todos"></div>
+    <script src="JS/todo.js"></script>
+  </body>
+  <script type="text/javascript">
+    let myObj = {
+      name: "Jeff",
+      age: "28",
+    };
+
+    let myObj_serialized = JSON.stringify(myObj);
+    console.log(myObj_serialized);
+
+    localStorage.setItem("myObj", myObj);
+    console.log(localStorage);
+  </script>
+  <footer>
+    <p>Author: Jeff Licano</p>
+    <p><a href="jefflicano82@outlook.com">jefflicano82@outlook.com</a></p>
+  </footer>
+</html>
